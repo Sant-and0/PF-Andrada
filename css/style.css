@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    --lt-color-overlay-default: #000 !important;
+    --lt-color-overlay-dark: #000 !important;
+    --bs-navbar-color: rgb(0, 0, 0);
 }
 
 @font-face {
@@ -1156,4 +1159,5 @@ div.cards-areas div.mobile{
     div.cards-areas div.mobile{
         display: flex;
     }
+
 }
