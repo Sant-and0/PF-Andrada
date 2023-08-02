@@ -7,7 +7,6 @@
     text-decoration: none;
     --lt-color-overlay-default: #000 !important;
     --lt-color-overlay-dark: #000 !important;
-    --bs-navbar-color: rgb(0, 0, 0);
 }
 
 @font-face {
@@ -151,7 +150,7 @@ h2.left-aligned{
     color: #000000;
 }
 
-a.btn-mnnv{
+a.btn-mnnv:link{
     color: #000000;
 }
 
@@ -495,10 +494,6 @@ div.column3{
     font-size: 20px;
     text-align: center;
     align-content: center;
-}
-
-a:link{
-    color: white;
 }
 
 .footer{
