@@ -9,6 +9,10 @@
     --lt-color-overlay-dark: #000 !important;
 }
 
+a{
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Source Sans 3', sans-serif;
@@ -494,6 +498,10 @@ div.column3{
     font-size: 20px;
     text-align: center;
     align-content: center;
+}
+
+.button-soc:link{
+    color: white;
 }
 
 .footer{
