@@ -1,0 +1,148 @@
+.footer-head{
+    justify-content: center;
+    color: #c0c0c0;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.footer-text{
+    width: 307px;
+    height: 26px;
+    color: #c0c0c0;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: left;
+}
+
+.footer{
+    background-color: #434242;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.footer2{
+    background-color: #232323;
+    display: flex;
+    width: auto;
+    height: 60px;
+    align-items: center;
+}
+
+#footerLogo{
+    margin-left: 13%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.footer{
+    display: grid;
+    grid-template-areas: 
+    "contacto reuniones redes mapa";
+    grid-template-columns: 20% 30% 20% 30%;
+}
+
+a.footer-text:hover {
+    background: none;
+  }  
+  a.footer-text:visited {
+    color: #c0c0c0;
+  }
+
+
+
+div.footer-1{
+    grid-area: contacto;
+    padding: 0px 50px;
+}
+
+.info-col{
+    display: contents;
+}
+
+div.footer-2{
+    grid-area: reuniones;
+    padding: 0px 50px;
+}
+
+div.footer-3{
+    grid-area: redes;
+    padding: 0px 50px;
+}
+
+div.footer-4{
+    grid-area: mapa;
+    padding: 0px 50px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+div.footer-2{
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "col1 col2";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 130px auto;
+}
+
+div h2.two-column{
+    grid-area: title;
+}
+
+div.col1{
+    grid-area: col1;
+    padding-top: 50px;
+}
+
+div.col2{
+    grid-area: col2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 50px;
+    margin-left: 20px;
+}
+
+
+.right-aligned{
+    text-align: right;
+}
+
+.footer-column{
+    margin-bottom: 20px;
+}
+
+
+.col2 ul li.footer-column{
+    text-align: right;
+    margin-left: 30px;
+    max-width: 150px;
+}
+
+.footer-mob{
+    display: none;
+}
+
+.accordion{
+    display: none;
+}

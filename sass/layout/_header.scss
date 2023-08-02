@@ -1,0 +1,53 @@
+div.sociallogo a:active{
+    background-color: white ;
+}
+
+a.btn-mnnv{
+    outline: none;
+    text-decoration: none;
+    width: auto;
+    text-align: center;
+    line-height: 3;
+    color: #000000;
+    font-weight: 600;
+}
+
+a.btn-mnnv:hover{
+    background-color: #5e5e5e;
+}
+
+.sociallogo{
+    width: 15%;
+    display: flex;
+    padding: 10px 0px 50px 0px;
+    justify-content: space-evenly;
+}
+
+nav.nav2 div.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2 div.logo{
+    width:15%;
+    display: flex;
+    justify-content: center;
+}
+
+div.ipmin{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   
+div.ipgen{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+   
+div.ipgen ul{
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
