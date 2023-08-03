@@ -270,4 +270,47 @@
     div.cards-areas div.mobile{
         display: flex;
     }
+
+    // Contact mapa //
+
+    div.map-sec {
+        h2{
+            height: auto;
+        }
+    }
+    div.sect.cp2{
+        display: grid;
+        grid-template-areas: 
+        "h2-grid"
+        "contact-form"
+        "contact-info";
+        grid-template-columns: 100%;
+        width: 94%;
+        justify-content: center;
+    }
+    .contact-info{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 40px auto;
+    }
+    .h2-grid{
+        margin: 35px auto;
+    }
+    .social-list{
+        li{
+            img{
+                width: 23px;
+            }
+        }
+    }
+    .social-div{
+        img{
+            width: 23px;
+        }
+    }
+    .social-text{
+        font-size: 0.8rem;
+    }
 }

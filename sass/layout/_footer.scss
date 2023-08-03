@@ -6,6 +6,7 @@
     font-size: 2rem;
     line-height: 1.3;
     text-align: left;
+    font-family: inherit;
 }
 
 .footer-text{
@@ -13,6 +14,7 @@
     height: 26px;
     color: #c0c0c0;
     font-family: "Source Sans Pro";
+    font-family: inherit;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1;
@@ -54,8 +56,6 @@ a.footer-text:hover {
   a.footer-text:visited {
     color: #c0c0c0;
   }
-
-
 
 div.footer-1{
     grid-area: contacto;
