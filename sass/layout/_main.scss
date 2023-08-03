@@ -99,6 +99,20 @@ h2.left-aligned{
     text-align: center;
     font-size: 70px;
     color: #ffffff;
+    animation-name: fadeIn;
+    animation: fadeIn 2.2s ease;
+  }
+
+  @keyframes fadeIn{
+    0% {
+        opacity: 0;
+        filter:blur(20px);
+    }
+    20%{
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+    
   }
 
   .centrado{
