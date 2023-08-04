@@ -192,12 +192,13 @@ h2.left-aligned{
   }
 
   .content{
-    margin: 20px;
+    margin: 50px auto;
+    width: 70%;
     height: 90px;
     display: flex;
     font-family: 'Open S', sans-serif;
     color: #7a7a7a;
-    font-size: 18px;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -258,6 +259,10 @@ h2.left-aligned{
     justify-content: center;
 }
 
+div.three-column div div.col-subtext{
+    max-height: 100px;
+}
+
 .col-text{
     padding-top: 50px;
     margin-left: 3%;
@@ -267,13 +272,15 @@ h2.left-aligned{
     font-family: 'Open S', sans-serif;
     color: #7a7a7a;
     color: #444444;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     justify-content: center;
 }
 
 
 div.three-column{
+    width: 88%;
+    margin: 0 auto;
     display: grid;
     grid-template-areas:
     "column1 column2 column3";

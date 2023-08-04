@@ -425,12 +425,13 @@ h2.left-aligned {
   align-content: center; }
 
 .content {
-  margin: 20px;
+  margin: 50px auto;
+  width: 70%;
   height: 90px;
   display: flex;
   font-family: 'Open S', sans-serif;
   color: #7a7a7a;
-  font-size: 18px;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -486,6 +487,9 @@ h2.left-aligned {
   align-items: center;
   justify-content: center; }
 
+div.three-column div div.col-subtext {
+  max-height: 100px; }
+
 .col-text {
   padding-top: 50px;
   margin-left: 3%;
@@ -495,11 +499,13 @@ h2.left-aligned {
   font-family: 'Open S', sans-serif;
   color: #7a7a7a;
   color: #444444;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   justify-content: center; }
 
 div.three-column {
+  width: 88%;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: "column1 column2 column3";
   grid-template-columns: 33% 33% 33%; }
@@ -878,7 +884,16 @@ div.map-sec {
   h2 {
     font-size: 1.6rem; }
   .headline1 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    animation-name: fadeIn;
+    animation: fadeIn 2.2s ease; }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      filter: blur(20px); }
+    20% {
+      opacity: 1;
+      filter: brightness(2) blur(10px); } }
   .pre-headline {
     font-size: 1rem; }
   .billboard {
