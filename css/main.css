@@ -82,7 +82,11 @@ h3 {
   font-family: 'Open S', sans-serif;
   font-size: 1.7rem;
   font-weight: 550;
-  color: #444444; }
+  color: #444444;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
 
 img {
   justify-self: center; }
@@ -131,7 +135,8 @@ nav.nav2 div.container-fluid {
 .nav2 div.logo {
   width: 15%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-left: 10px; }
 
 div.ipmin {
   display: flex;
@@ -511,13 +516,18 @@ div.three-column {
   grid-template-columns: 33% 33% 33%; }
 
 div.column1 {
-  grid-area: column1; }
+  grid-area: column1;
+  padding: 20px 10px 10px 10px; }
 
 div.column2 {
-  grid-area: column2; }
+  grid-area: column2;
+  padding: 20px 10px 10px 10px;
+  border-left: #e2e2e2 solid 1px; }
 
 div.column3 {
-  grid-area: column3; }
+  grid-area: column3;
+  padding: 20px 10px 10px 10px;
+  border-left: #e2e2e2 solid 1px; }
 
 .img-slider {
   display: flex;
@@ -567,7 +577,6 @@ div.car-center {
 
 div#carouselExampleIndicators {
   grid-area: gal-carousel;
-  width: 1300px;
   border-radius: 24px;
   overflow: hidden; }
 
@@ -655,7 +664,7 @@ div.section-1 div.section-carousel div.car-center div#carouselExampleIndicators 
   grid-template-areas: "img-gen2 img-gen2 title-h2-2 title-h2-2" "img-gen2 img-gen2 text-p-2 text-p-2" ". . img-gen3 img-gen3" "cta . img-gen3 img-gen3";
   width: 80%;
   margin: 35px auto 35px auto;
-  grid-template-columns: 33% 33% 17% 17%;
+  grid-template-columns: 30% 30% 20% 20%;
   grid-template-rows: 18% 50% 16% 16%;
   border-radius: 30px;
   padding: 40px; }
@@ -675,6 +684,7 @@ div.section-1 div.section-carousel div.car-center div#carouselExampleIndicators 
   display: flex;
   grid-area: img-gen3;
   flex-wrap: wrap;
+  align-content: space-around;
   justify-content: space-evenly; }
 
 .minigal-car {
@@ -687,7 +697,8 @@ div.minigal img.subimage {
 
 .cards-areas h2 {
   grid-area: title-h2-2;
-  height: 35%; }
+  height: 35%;
+  margin-bottom: 10px; }
 
 .cards-areas p {
   max-width: 90%;
@@ -696,13 +707,14 @@ div.minigal img.subimage {
   grid-area: text-p-2;
   height: auto;
   margin: 20px;
+  margin-top: 40px;
   padding: 0 10px; }
 
 .cards-areas.invert {
   display: grid;
   grid-template-areas: "title-h2-2 title-h2-2 img-gen2 img-gen2" "text-p-2 text-p-2 img-gen2 img-gen2" "img-gen3 img-gen3 . ." "img-gen3 img-gen3 . cta";
   width: 80%;
-  grid-template-columns: 17% 17% 33% 33%;
+  grid-template-columns: 20% 20% 30% 30%;
   margin: 35px auto 35px auto;
   border-radius: 30px;
   padding: 40px; }
@@ -745,13 +757,34 @@ div.section-3 div.car-center {
   margin: 0px 20px 20px 20px; }
 
 div.cont-1 {
-  grid-area: cont-1; }
+  grid-area: cont-1;
+  margin: 0 auto;
+  padding: 10px 20px; }
+  div.cont-1 h2 {
+    margin-bottom: 10px; }
 
 div.cont-2 {
-  grid-area: cont-2; }
+  grid-area: cont-2;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-bottom: 20px; }
+  div.cont-2 h2 {
+    margin-bottom: 10px; }
 
 div.cards-areas div.mobile {
   display: none; }
+
+div.carousel-info {
+  display: flex !important;
+  justify-content: space-between; }
+  div.carousel-info h2 {
+    margin: 0; }
+
+.carousel-caption {
+  right: 10%;
+  bottom: 3rem;
+  left: 10%;
+  padding-bottom: 3rem; }
 
 .section-1.cp2 {
   margin-bottom: 70px; }
@@ -902,6 +935,10 @@ div.map-sec {
     font-size: 0.8rem;
     width: 100px;
     height: 32px; }
+  div.column2 {
+    border-left: none; }
+  div.column3 {
+    border-left: none; }
   p.content {
     font-size: 0.9rem;
     font-weight: 500;
@@ -920,7 +957,16 @@ div.map-sec {
     height: auto;
     font-size: 0.9rem; }
   div.section-3 div.car-center {
-    display: flex; }
+    display: flex;
+    width: 88%;
+    margin: 0 auto; }
+  .car-center.mobile.minigal-car {
+    margin-top: 50px; }
+    .car-center.mobile.minigal-car div div.carousel-inner {
+      min-height: 174px; }
+      .car-center.mobile.minigal-car div div.carousel-inner img {
+        min-height: 174px;
+        margin-top: 0; }
   #topBtn {
     width: 50px;
     height: 50px; }
@@ -1056,9 +1102,12 @@ div.map-sec {
     grid-template-columns: 100%;
     grid-template-rows: 210px 60px 320px auto auto;
     padding: 0px; }
+  div.cards-areas p {
+    margin-top: 50px; }
   .cards-areas h2 {
     margin: 30px;
-    padding: 10px auto; }
+    padding: 10px auto;
+    margin-top: 60px; }
   .minigal {
     margin: 10px auto; }
   .cards-areas img {
@@ -1108,4 +1157,19 @@ div.map-sec {
   .social-div img {
     width: 23px; }
   .social-text {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  div.cont-1 {
+    grid-area: cont-1;
+    margin: 0 auto;
+    padding: 10px 20px; }
+    div.cont-1 h2 {
+      margin-bottom: 10px;
+      margin: 20px auto; }
+  div.cont-2 {
+    grid-area: cont-2;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-bottom: 20px; }
+    div.cont-2 h2 {
+      margin-bottom: 10px;
+      margin: 20px auto; } }

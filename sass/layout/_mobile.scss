@@ -30,6 +30,13 @@
         width: 100px;
         height: 32px;   
     }
+    div.column2{
+        border-left: none;
+    }
+    
+    div.column3{
+        border-left: none;
+    }
     p.content{
         font-size: 0.9rem;
         font-weight: 500;
@@ -55,6 +62,20 @@
     }
     div.section-3 div.car-center{
         display: flex;
+        width: 88%;
+        margin: 0 auto;
+    }
+    .car-center.mobile.minigal-car{
+        margin-top: 50px;
+        div{
+            div.carousel-inner{
+                min-height: 174px;
+                img{
+                   min-height: 174px;
+                   margin-top: 0;
+                }
+            }
+        }
     }
     #topBtn{
         width: 50px;
@@ -237,9 +258,15 @@
         grid-template-rows: 210px 60px 320px auto auto;
         padding: 0px;
     }
+    div.cards-areas{
+        p{
+            margin-top: 50px;
+        }
+    }
     .cards-areas h2{
         margin: 30px;
         padding: 10px auto;
+        margin-top: 60px;
     }
     .minigal{
         margin: 10px auto;
@@ -323,5 +350,25 @@
     }
     .social-text{
         font-size: 0.8rem;
+    }
+    div.cont-1{
+        grid-area: cont-1;
+        margin: 0 auto;
+        padding: 10px 20px;
+        h2{
+            margin-bottom: 10px;
+            margin: 20px auto;
+        }
+    }
+    div.cont-2{
+        grid-area: cont-2;
+        margin: 0 auto;
+        padding: 10px 20px;   
+        margin-bottom: 20px;
+    
+        h2{
+            margin-bottom: 10px;
+            margin: 20px auto;
+        }
     }
 }
