@@ -1,59 +1,56 @@
 // Media Queries 
 
-@media (max-width : 430px) {
+    // Navbar RESPONSIVE
+@media screen and (max-width: 991px) {
+
+    div.ipmin.resp {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #eeebeb49;
+        .ipgen{
+            width: 90%;
+            max-width: 90%;
+            margin: 0 auto;
+            .nav-item{
+                border-bottom: #5c5c5c56 solid 1px;
+            }
+        }
+    }
+    .slg-nav{
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .nav-social-pad{
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width : 768px) and (min-width : 426px){
     h1{
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
     h2{
         font-size: 1.6rem;
     }
+
+
+    // Billboard
     .headline1{
-        font-size: 2rem;
+        font-size: 3rem;
         animation-name: fadeIn;
         animation: fadeIn 2.2s ease;
     }
 
-// Animación
-
-  @keyframes fadeIn{
-    0% {
-        opacity: 0;
-        filter:blur(20px);
-         }
-    20%{
-        opacity: 1;
-        filter: brightness(2) blur(10px);}
-    }
-
-// ---- 
-
-    // Billboard Index
-
-    // Billboard 
-    .pre-headline{
-        font-size: 1rem;
-    }
-    .billboard{
-        height: 220px;
-    }
-    .btn-nosotros{
-        font-size: 0.8rem;
-        width: 100px;
-        height: 32px;   
-    }
-
-    // Three Column NOVEDADES
-    div.column2{
-        border-left: none;
-    }
-    
-    div.column3{
-        border-left: none;
-    }
+    // Quienes somos
     p.content{
         font-size: 1rem;
         font-weight: 500;
-        padding-top: 60px;
+    }
+
+    // Novedades
+    div.column3{
+        border-left: none;
     }
     div.three-column{
         display: none;
@@ -96,12 +93,6 @@
     }
     div.car-center div div.carousel-indicators{
         margin-top: 30px;
-    }
-
-    // Top BUTTON
-    #topBtn{
-        width: 50px;
-        height: 50px;
     }
 
     // Footer
@@ -148,32 +139,39 @@
     }
     .map{
         width: 100%;
-        max-width: 330px;
+        max-width: 600px;
         height: 300px;
-        margin: 10px auto;
+        margin: 10px 50px;
         padding: 0px auto;
     }
     .mapp-1{
         padding: 0px auto;
         display: flex;
         justify-content: center;
+    }
+
+    div.carousel-info{
+        display: flex!important;
+        justify-content: space-between;
+        h2{
+            margin: 0;
+        }
+
 
     }
 
-
-    // Nosotros
-
-    // Billboard 
+        // Nosotros Billboard
     .carousel-caption {
         right: 10%;
-        bottom: 0em;
+        bottom: 3rem;
         left: 10%;
+        padding-bottom: 3rem;
     }
     div.carousel-info2{
         h2{
             margin: 0;
             text-align: end;
-            font-size: 0.7rem;
+            font-size: 1.1em;
             align-items: flex-end
         }
     }
@@ -184,9 +182,14 @@
         padding-bottom: 1em;
     }
     div.carousel-info3{
+        h2{
+            margin: 0;
+            text-align: start;
+            font-size: 2.3rem;
+        }
         h2.h2-title{
-            font-size: 1.6rem;
-            height: 30px;
+            font-size: 30px;
+            height: 45px;
         }
     }
     .carousel-caption3 {
@@ -196,44 +199,8 @@
         left: 5%;
         padding-bottom: 1em;
     }
-    // Contenido
-      .content{
-        height: 150px;
-      }
-      .content-left{
-        width: auto;  
-        margin: 20px auto 30px auto;
-        height: auto;
-        font-family: 'Open S', sans-serif;
-        color: #7a7a7a;
-        font-size: 1rem;
-        display: flex;
-        justify-content: start;
-        text-align: start;
-        align-items: start;
-    }
-    h2.left-aligned{
-        font-size: 1.4rem;
-        margin: 50px 0px 20px 0px;
-        width: auto;
-        height: auto;
-    }
-    .container-ct{
-        display: grid;
-        grid-template-areas: 
-        "cont-1"
-        "cont-2";
-        margin: 0px 20px 20px 20px;
-    }
-    div.cont-1{
-        grid-area: cont-1;
-    }
-    div.cont-2{
-        grid-area: cont-2;
-    }
 
-    // POSTEOS
-    // CARDS
+    // Posteos
     .cards{
         display: grid;
         grid-template-areas:
@@ -253,10 +220,10 @@
         }
     }
 
-
     .cards img.mob-t{
         grid-area: img-gen-2;
-        width: 200px;
+        width: 370px;
+        width: 100%;
         min-width: none;
     }
     
@@ -264,21 +231,20 @@
         grid-area: title-3;
         justify-content: left;
         align-items: start;
-        margin: 15px;
+        margin: 30px 15px 15px 30px;
     }
     
     .cards p{
         grid-area: text-p-2;
         display: grid;
-        width: 200px;
-        min-width: 0;
+        width: 100%;
+        max-width: 370px;
         margin: 20px auto;
-        font-size: 1rem;
+        font-size: 1.12rem;
     }
     
     .cards img.go-button{
         grid-area: img-button-2;
-        width:67px;
     }
     .btn-go{
         position: relative;
@@ -287,8 +253,7 @@
         padding: 6px 10px 10px 10px;
     }
 
-    // Areas
-    // cards areas
+        // Areas
     div.section-1 div.section-carousel {
         display: flex;
         width: 100%;
@@ -297,7 +262,6 @@
         border-radius: 25px;
     }
     .cards-areas{
-        max-height: 1300px ;
         border: solid 1px hsla(0, 1%, 26%, 0.116);
         grid-template-areas:
         "img-gen2"
@@ -305,21 +269,21 @@
         "text-p-2"
         "img-gen4"
         "cta";
-        margin: 35px auto;
+        margin: 35px auto 35px auto;
         grid-template-columns: 100%;
-        grid-template-rows: auto 60px auto auto auto;
+        grid-template-rows: auto 60px 320px auto auto;
         padding: 0px;
     }
     div.cards-areas{
         p{
-            margin-top: 50px;
-            height: auto;
-            max-height: 450px;
+            margin: 50px auto;
+            height: 300px;
         }
     }
     .cards-areas h2{
         margin: 30px;
         padding: 10px auto;
+        margin-top: 35px;
     }
     .minigal{
         margin: 10px auto;
@@ -331,7 +295,6 @@
         border-radius: 20px;
     }
      .cards-areas.invert{
-        max-height: 1300px ;
         grid-template-areas:
         "img-gen2"
         "title-h2-2"
@@ -340,7 +303,7 @@
         "cta";
         margin: 35px auto 35px auto;
         grid-template-columns: 100%;
-        grid-template-rows: auto 60px auto auto auto;
+        grid-template-rows: auto 60px 320px auto auto;
         padding: 0px;
     }
     .cards-areas a.button{
@@ -352,20 +315,21 @@
         min-width: 0px;
         font-size: large;
         grid-area: text-p-2;
-        height: 100%;
-        max-height: 350px;
+        height: auto;
         margin: 20px;
         padding: 0 10px;
     }
     .desk{
         display: none;
     }
+    .tablet{
+        display: flex;
+    }
     div.cards-areas div.mobile{
         display: flex;
     }
 
-    // Contact mapa //
-
+    // Contacto
     div.map-sec {
         h2{
             height: auto;
@@ -382,7 +346,7 @@
         justify-content: center;
     }
     .contact-info{
-        width: 75%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;

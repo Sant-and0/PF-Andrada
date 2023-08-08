@@ -30,6 +30,7 @@
 
 .section-3{
     grid-area: section-3;
+    height: auto;
 }
 
 .section-4{
@@ -121,41 +122,41 @@ h2.left-aligned{
     transform: translate(-50%, -50%);
 }
 
-.headline-nos{
-    font-family: 'Open S', sans-serif;
-    font-weight: bold;
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    text-shadow: 0.1em 0.1em 0.2em black ;
-    font-size: 60px;
-    color: #ffffff;
-  }
+// .headline-nos{
+//     font-family: 'Open S', sans-serif;
+//     font-weight: bold;
+//     position: absolute;
+//     display: inline-block;
+//     text-align: center;
+//     text-shadow: 0.1em 0.1em 0.2em black ;
+//     font-size: 60px;
+//     color: #ffffff;
+//   }
 
-  .bill-description{
-    width: 700px;
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    display: inline-block;
-    text-align: end;
-    font-size: 40px;
-    text-shadow: 0.1em 0.1em 0.2em black ;
-    font-weight: 600;
-    color: white;
-  }
+//   .bill-description{
+//     width: 700px;
+//     font-family: 'Open Sans', sans-serif;
+//     position: absolute;
+//     display: inline-block;
+//     text-align: end;
+//     font-size: 40px;
+//     text-shadow: 0.1em 0.1em 0.2em black ;
+//     font-weight: 600;
+//     color: white;
+//   }
 
-  .inicio{
-    top: 16%;
-    left:16%;
-    transform: translate(-50%, -50%);
+//   .inicio{
+//     top: 16%;
+//     left:16%;
+//     transform: translate(-50%, -50%);
 
-}
+// }
 
-  .align-end{
-    top: 70%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-  }
+//   .align-end{
+//     top: 70%;
+//     left: 75%;
+//     transform: translate(-50%, -50%);
+//   }
 
 .pre-headline{
     font-family: 'Open Sans', sans-serif;
@@ -247,7 +248,7 @@ h2.left-aligned{
 }
 
 .col-subtext{
-    padding-top: 35px;
+    padding-top: 50px;
     margin-left: 15%;
     margin-right: 15%;
     width: 67%;
@@ -260,11 +261,11 @@ h2.left-aligned{
 }
 
 div.three-column div div.col-subtext{
-    max-height: 100px;
+    max-height: 500px;
 }
 
 .col-text{
-    padding-top: 50px;
+    padding-top: 35px;
     margin-left: 3%;
     margin-right: 15%;
     width: 90%;
@@ -372,7 +373,7 @@ div.section-4 h2.title-2{
 }
 
 
-
+// CARDS SECTIONS POSTEOS
 .card-section{
     display: block;
 }
@@ -382,6 +383,7 @@ div.section-4 h2.title-2{
     grid-template-areas:
     "img-gen title-h2 title-h2"
     "img-gen text-p img-button";
+    grid-template-columns: 43.4% 50.7% auto;
     width: 70%;
     margin: 35px auto 35px auto;
     background-color: #434242;
@@ -391,18 +393,22 @@ div.section-4 h2.title-2{
 
 .cards.par{
     background-color: white;
-}
-
-.cards.par h2{
-    color: #434242 ;
+    text-align: start;
 }
 
 .cards.par p{
     color: #434242 ;
+    text-align: start;
+}
+
+.cards img.contentimage{
+    grid-area: img-gen;
+    min-width: none;
+    max-width: 450px;
+    width: 100%;
 }
 
 .cards img{
-    grid-area: img-gen;
     width: 450px;
     border-radius: 20px;
 }
@@ -410,32 +416,57 @@ div.section-4 h2.title-2{
 .cards h2{
     grid-area: title-h2;
     color: white;
+    width: 100%;
+    max-width: 500px;
     justify-content: left;
     align-items: start;
+    text-align: start;
     height: 35%;
     margin: auto auto 10px 20px;
 }
 
+.cards.par h2{
+    color: #434242 ;
+}
+
 .cards p{
     color: white;
-    max-width: 90%;
-    min-width: 300px;
+    width: 100%;
+    max-width: 620px;
+    min-width: none;
     grid-area: text-p;
     height: auto;
     margin: 20px;
 }
 
-.cards img.go-button{
-    grid-area: img-button;
-    width:67px;
+p.text-card{
+    margin-top: 60px;
 }
 
-.btn-go{
-    position: relative;
-    top: 62%;
-    left: 0;
-    padding: 6px 10px 10px 10px;
+.cards div.carousel-caption.card-copy {
+    grid-area: img-button;
+    right: none;
+    bottom: none;
+    left: none;
+    padding-bottom: none;
+    .d-md-block {
+        display: flex;
+    }
+    a img.go-button{
+        width:100%;
+        max-width: 60px;
+        min-width: 40px;
+    }
 }
+
+div.carousel-caption.card-copy{
+    position: inherit;
+    display: grid;
+    align-items: end;
+}
+
+
+// Cards areas AREAS
 
 div.section-1 div.section-carousel{
     display: flex;
@@ -523,7 +554,6 @@ div.minigal img.subimage{
     grid-area: text-p-2;
     height: auto;
     margin: 20px;
-    margin-top: 40px;
     padding: 0 10px;
 }
 
@@ -619,6 +649,40 @@ div.carousel-info{
     right: 10%;
     bottom: 3rem;
     left: 10%;
+    padding-bottom: 3rem;
+}
+div.carousel-info2{
+    h2{
+        margin: 0;
+        text-align: end;
+        font-size: 2.5rem;
+        align-items: flex-end
+    }
+    h2.h2-title{
+        font-size: 60px;
+    }
+}
+.carousel-caption2 {
+    right: 10%;
+    bottom: 3rem;
+    left: 10%;
+    padding-bottom: 0.2rem;
+}
+div.carousel-info3{
+    h2{
+        margin: 0;
+        text-align: start;
+        font-size: 2.3rem;
+    }
+    h2.h2-title{
+        font-size: 60px;
+    }
+}
+.carousel-caption3 {
+    right: 0;
+    top: 5%;
+    bottom: 3rem;
+    left: 5%;
     padding-bottom: 3rem;
 }
 

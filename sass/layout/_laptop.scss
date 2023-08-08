@@ -1,0 +1,190 @@
+@media screen and (max-width : 1024px) and (min-width : 769px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.9rem;
+    }
+
+// Footer
+    .footer{
+        display: none;
+    }
+    .accordion{
+        display: grid;
+        --bs-accordion-border-color: none;
+        --bs-accordion-active-color: #5c5c5c;
+        --bs-accordion-btn-focus-border-color: #5c5c5c;
+        --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+    .accordion-header{
+        margin: 0;
+        background-color: #434343;
+        border: none;
+    }
+    .accordion-button{
+        background-color: #434343;
+    }
+    .accordion-button{
+        color: white;
+        font:inherit;
+        font-size: 1.3rem;
+        background-color: #434343;
+    }
+    .accordion-button:not(.collapsed){
+        color: white;
+        background-color: #434343;
+    }
+    .accordion-body{
+        background-color: #313131;
+        display: grid;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .double-col{
+        background-color: #313131;
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .map{
+        width: 100%;
+        max-width: 780px;
+        height: 300px;
+        margin: 10px 50px;
+        padding: 0px auto;
+    }
+    .mapp-1{
+        padding: 0px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.carousel-info{
+        display: flex!important;
+        justify-content: space-between;
+        h2{
+            margin: 0;
+        }
+    }
+    
+        // Nosotros Billboard
+        .carousel-caption {
+            right: 10%;
+            bottom: 3rem;
+            left: 10%;
+            padding-bottom: 3rem;
+        }
+        div.carousel-info2{
+            h2{
+                margin: 0;
+                text-align: end;
+                font-size: 1.6em;
+                align-items: flex-end
+            }
+        }
+        .carousel-caption2 {
+            right: 10%;
+            bottom: 0rem;
+            left: 10%;
+            padding-bottom: 1em;
+        }
+        div.carousel-info3{
+            h2{
+                margin: 0;
+                text-align: start;
+                font-size: 2.9rem;
+            }
+            h2.h2-title{
+                font-size: 52px;
+                height: 50px;
+            }
+        }
+        .carousel-caption3 {
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 5%;
+            padding-bottom: 1em;
+        }
+    
+
+        // Areas 
+        div.section-1 div.section-carousel {
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            border-radius: 25px;
+        }
+        .cards-areas{
+            border: solid 1px hsla(0, 1%, 26%, 0.116);
+            grid-template-areas:
+            "img-gen2"
+            "title-h2-2"
+            "text-p-2"
+            "img-gen4"
+            "cta";
+            margin: 35px auto 35px auto;
+            grid-template-columns: 100%;
+            grid-template-rows: auto 60px 320px auto auto;
+            padding: 0px;
+        }
+        div.cards-areas{
+            p{
+                margin: 50px auto;
+                height: 300px;
+            }
+        }
+        .cards-areas h2{
+            margin: 30px;
+            padding: 10px auto;
+            margin-top: 35px;
+        }
+        .minigal{
+            margin: 10px auto;
+            grid-area: auto;
+        }
+        .cards-areas img{
+            grid-area: img-gen2;
+            margin-top: 30px;
+            width: 80%;
+            border-radius: 20px;
+        }
+         .cards-areas.invert{
+            grid-template-areas:
+            "img-gen2"
+            "title-h2-2"
+            "text-p-2"
+            "img-gen4"
+            "cta";
+            margin: 35px auto 35px auto;
+            grid-template-columns: 100%;
+            grid-template-rows: auto 60px 320px auto auto;
+            padding: 0px;
+        }
+        .cards-areas a.button{
+            display: flex;
+            margin: 30px auto;
+            width: 250px;
+        }
+        .cards-areas p{
+            min-width: 0px;
+            font-size: large;
+            grid-area: text-p-2;
+            height: auto;
+            margin: 20px;
+            padding: 0 10px;
+        }
+        .desk{
+            display: flex;
+        }
+        .tablet{
+            display: flex;
+        }
+        div.cards-areas div.mobile{
+            display: none;
+        }
+}
+
