@@ -113,7 +113,7 @@ div.sociallogo a:active {
 a.btn-mnnv {
   outline: none;
   text-decoration: none;
-  width: auto;
+  width: 100%;
   text-align: center;
   line-height: 3;
   color: #000000;
@@ -964,7 +964,7 @@ div.map-sec {
   p.content {
     font-size: 1rem;
     font-weight: 500;
-    padding-top: 60px; }
+    padding-top: 0px; }
   div.three-column {
     display: none; }
   .col-subtext {
@@ -1065,7 +1065,8 @@ div.map-sec {
     left: 5%;
     padding-bottom: 1em; }
   .content {
-    height: 150px; }
+    height: 400px;
+    margin: 0 auto; }
   .content-left {
     width: auto;
     margin: 20px auto 30px auto;
@@ -1215,6 +1216,9 @@ div.map-sec {
       margin: 20px auto; } }
 
 @media screen and (max-width: 991px) {
+  a.btn-mnnv {
+    text-align: left;
+    padding-left: 20px; }
   div.ipmin.resp {
     flex-direction: column;
     align-items: flex-start;

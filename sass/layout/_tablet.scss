@@ -3,6 +3,11 @@
     // Navbar RESPONSIVE
 @media screen and (max-width: 991px) {
 
+    a.btn-mnnv{
+        text-align: left;
+        padding-left: 20px;
+    }
+
     div.ipmin.resp {
         flex-direction: column;
         align-items: flex-start;
